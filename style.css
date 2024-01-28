@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#garden {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#container {
+    position: absolute;
+    left: 16.5%;
+    top: 15%;
+    /* border: 1px black solid; */
+}
+
+#button-container {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 10px; 
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    position: absolute;
+    left: 22%;
+    top: 1%;
+    background: none;
+    border: none;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.buttons img {
+    width: 4vw; 
+    height: auto;
+    cursor: pointer;
+    
+}
+
+#sun {
+    position: absolute;
+    font-size: 1.5vw;
+    left: 15.9%;
+    top: 10.4%;
+}
+
+/* .lane1 {
+    display: flex;
+} */
+
+.grid-container {
+    display: FLEX;
+    grid-template-columns: repeat(9, 1fr); 
+}
+
+.grid-item {
+    width: 7.5vw;
+    height: 16vh;
+    /* background-color: #19b800;  */
+    /* border: 1px solid #000;  */
+    /* opacity: 0.5; */
+    box-sizing: border-box; 
+    position: relative; 
+    cursor: pointer; 
+    margin: 0;
+    /* aspect-ratio: 1/1; */
+
+}
+
+.grid-item img {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.garg {
+    max-width: 30%!important;
+    max-height: 30%!important;
+    width: 10%!important;
+    height: auto!important;
+}
+
+/* #addImageBtn {
+    margin: 10px 0;
+} */
+.floating-image {
+    position: absolute;
+    z-index: 100;
+    max-width: 7vw;
+    aspect-ratio: 1/1;
+}
+
+.resize {
+    max-width: 300% !important;
+}
+
+.plants {
+    z-index: 5;
+}
+
+.pea {
+    position: absolute;
+    z-index: 10;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+.cabbadge {
+    position: absolute;
+    z-index: 10x;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+.splash {
+    position: absolute;
+    z-index: 10x;
+    width: 15px;
+    aspect-ratio: 1/1;
+}
+
+.zombie {
+    position: absolute;
+    pointer-events: none;
+}
+
+#score {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+
+.cabbadge {
+    animation-name: rotateCabbadge;
+    animation-duration: 1s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+  
+  @keyframes rotateCabbadge {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.trextre {
+    width: 20.5vw;
+    height: 45vh;
+    /* background-color: aqua; */
+    position: absolute;
+    z-index: 100;
+    transform: translate(-20%,-25%)
+}
+
+.mowers {
+    z-index: 50;
+    position: absolute;
+    height: 10vh;
+    
+    /* aspect-ratio: 1/1; */
+    
+}
+
+.Losescreen {
+    /* background-image: url("pics/losescreen.png"); */
+    position: absolute;
+    width: 40%;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.hitbox {
+    background-color: aqua;
+}
+
+#leaderboardBtn {
+    background-color: blue;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 15vw;
+    height: 8vh;
+    transform: translate(-50%);
+    font-size: 110%;
+}
+
+#leaderboard {
+    width: 100%;
+    margin: 0 auto;
+    max-height: 75vh; 
+    overflow-y: auto;
+}
+
+#nameInput {
+    margin-bottom: 10px;
+}
+
+#innsetning {
+    display: none;
+    background-color:burlywood;
+    position: absolute;
+    z-index: 100;
+    height: 30vh;
+    width: 50%;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,18%);
+    text-align: center;
+
+}
+
+#lists {
+    display: none;
+    background-color: burlywood;
+    position: absolute;
+    z-index: 100;
+    height: 90vh;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 5px;
+}
+
+#lists .button-container {
+    width: 100%;
+    margin-bottom: 3%; 
+}
+
+#lists button {
+    padding: 1%;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
+.list-item div {
+    width: 100%;
+    
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: bisque;
+    border-bottom: black 1px solid;
+    margin-bottom: 2%;
+    padding: 1%;
+    border-radius: 10%;
+    
+
+}
