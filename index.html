@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PvZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img id="garden" src="pics/garden.jpg" alt="garden">
+
+<div class="buttons">
+    <button id="addSunflowerBtn"><img src="pics/sunflowerShop.png" alt="sunflower"></button>
+    <button id="addPeashooterBtn"><img src="pics/peashooterShop.png" alt="peashooter"></button>
+    <button id="addCabbadgepultBtn"><img src="pics/cabbadgepultShop.png" alt="cabbadgepult"></button>
+    <button id="addWallnutBtn"><img src="pics/wallnutShop.png" alt="wallnut"></button>
+    <button id="addSnowpeaBtn"><img src="pics/SnowpeaShop.png" alt="snowpea"></button>
+    <button id="addRepeaterBtn"><img src="pics/RepeaterShop.png" alt="repeater"></button>
+    <button id="addPotatomineBtn"><img src="pics/PotatomineShop.png" alt="potatomine"></button>
+    <button id="addMelonpultBtn"><img src="pics/MelonpultShop.png" alt="melonpult"></button>
+    <button id="addWintermelonBtn"><img src="pics/wintermelonShop.png" alt="wintermelon"></button>
+    <button id="addCherrybombBtn"><img src="pics/CherrybombShop.png" alt="cherrybomb"></button>
+    <button id="addTallnutBtn"><img src="pics/TallnutShop.png" alt="tallnut"></button>
+    <button id="shovelBtn">Shovel</button>
+</div>
+    <div id="sun">0</div>
+    <div id="container">
+    
+    <div class="grid-container">
+        <div class="grid-item" data-index="1"></div>
+        <div class="grid-item" data-index="2"></div>
+        <div class="grid-item" data-index="3"></div>
+        <div class="grid-item" data-index="4"></div>
+        <div class="grid-item" data-index="5"></div>
+        <div class="grid-item" data-index="6"></div>
+        <div class="grid-item" data-index="7"></div>
+        <div class="grid-item" data-index="8"></div>
+        <div class="grid-item" data-index="9"></div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" data-index="1"></div>
+        <div class="grid-item" data-index="2"></div>
+        <div class="grid-item" data-index="3"></div>
+        <div class="grid-item" data-index="4"></div>
+        <div class="grid-item" data-index="5"></div>
+        <div class="grid-item" data-index="6"></div>
+        <div class="grid-item" data-index="7"></div>
+        <div class="grid-item" data-index="8"></div>
+        <div class="grid-item" data-index="9"></div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" data-index="1"></div>
+        <div class="grid-item" data-index="2"></div>
+        <div class="grid-item" data-index="3"></div>
+        <div class="grid-item" data-index="4"></div>
+        <div class="grid-item" data-index="5"></div>
+        <div class="grid-item" data-index="6"></div>
+        <div class="grid-item" data-index="7"></div>
+        <div class="grid-item" data-index="8"></div>
+        <div class="grid-item" data-index="9"></div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" data-index="1"></div>
+        <div class="grid-item" data-index="2"></div>
+        <div class="grid-item" data-index="3"></div>
+        <div class="grid-item" data-index="4"></div>
+        <div class="grid-item" data-index="5"></div>
+        <div class="grid-item" data-index="6"></div>
+        <div class="grid-item" data-index="7"></div>
+        <div class="grid-item" data-index="8"></div>
+        <div class="grid-item" data-index="9"></div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" data-index="1"></div>
+        <div class="grid-item" data-index="2"></div>
+        <div class="grid-item" data-index="3"></div>
+        <div class="grid-item" data-index="4"></div>
+        <div class="grid-item" data-index="5"></div>
+        <div class="grid-item" data-index="6"></div>
+        <div class="grid-item" data-index="7"></div>
+        <div class="grid-item" data-index="8"></div>
+        <div class="grid-item" data-index="9"></div>
+    </div>
+</div>
+    <div id="leaderboardDiv">
+        <div id="innsetning">
+            <h2>Register to Leaderboard</h2>
+            <div id="scores">
+                <p>
+                    You scored sun
+                </p>
+                <p>
+                    You scored Kills
+                </p>
+
+            </div>
+            <label for="nameInput">Your Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="addToLeaderboard()">Submit</button>
+
+        </div>
+        <div id="lists">
+            <h1>Leaderboard</h1>
+
+            <div class="button-container">
+                <button onclick="sortByName()">Name</button>
+                <button onclick="sortBySun()">Sun collected</button>
+                <button onclick="sortByScore()">Score</button>
+            </div>
+            
+        
+            <div id="leaderboard">
+                
+            </div>
+        </div>
+    </div>
+    <script src="pvz.js"></script>
+</body>
+</html>
